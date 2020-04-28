@@ -17,7 +17,7 @@
         <a title="Boton Login" href="./login">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
         </a>
-        <a title="Boton Registro" href="./registro">
+        <a title="Boton Registro" href="./register">
           <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
         </a>
         <a title="Boton Mis Posts" href="./vistapost">

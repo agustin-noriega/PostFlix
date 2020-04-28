@@ -13,10 +13,10 @@ class CreateCategoriasPostTable extends Migration
      */
     public function up()
     {
-        Schema::create('categorias_post', function (Blueprint $table) {
+        Schema::create('post_categories', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->char('nombre_categoria',200);
+            $table->char('category_name',200);
         });
     }
 
@@ -27,6 +27,6 @@ class CreateCategoriasPostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('categorias_post');
+        Schema::dropIfExists('post_categories');
     }
 }

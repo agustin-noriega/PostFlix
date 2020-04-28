@@ -13,19 +13,19 @@ class CreatePosteosTable extends Migration
      */
     public function up()
     {
-        Schema::create('posteos', function (Blueprint $table) {
+        Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->date('fecha');
-            $table->string('imagen',500);
-            $table->string('descripcion',500);
-            $table->decimal('calificacion',2,1);
+            $table->date('date');
+            $table->string('image',500);
+            $table->string('description',500);
+            $table->decimal('rating',2,1);
 
-            $table->unsignedBigInteger('usuarios_id');
-            $table->foreign('usuarios_id')->references('id')->on('usuarios');
+            $table->unsignedBigInteger('users_id');
+            $table->foreign('users_id')->references('id')->on('users');
 
-            $table->unsignedBigInteger('categorias_post_id');
-            $table->foreign('categorias_post_id')->references('id')->on('categorias_post');
+            $table->unsignedBigInteger('post_categories_id');
+            $table->foreign('post_categories_id')->references('id')->on('post_categories');
 
             $table->timestamps();
         });
@@ -38,6 +38,6 @@ class CreatePosteosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('posteos');
+        Schema::dropIfExists('posts');
     }
 }

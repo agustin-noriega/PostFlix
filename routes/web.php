@@ -12,16 +12,21 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 
-//Route::get("/index", "IndexController@home");
+Route::get("/index", "IndexController@home");
+
+Route::get('/logout', function(){
+   Auth::logout();
+   return Redirect::to('index.php');
+});//boton para desloguear
 
 Route::get("/login", function() {
   return view('login');
 });
-Route::post("/login", "LoginController@__construct");
+//Route::post("/login", "LoginController@__construct");
 
 Route::get("/register", function() {
 	return view("register");

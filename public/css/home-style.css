@@ -42,16 +42,20 @@ button:hover{
 
 }
 
-.btn-outline-success:hover {
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
+button#boton.btn.btn-outline-success {
+color:#dc3545;
+border-color: #dc3545;
+padding-right: 6px 12px;
+margin: 10px;
+}
+button#boton.btn.btn-outline-success:hover {
+color: white;
+border-color:#dc3545;
+padding-right: 6px 12px;
+margin: 10px;
+background-color: #dc3545;
 }
 
-.btn-outline-success {
-    color: #000;
-    border-color: #000;
-}
 /*////////               //////
 //////  INICIO DEL SECTION! //////
 /////////                ////*/

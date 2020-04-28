@@ -17,7 +17,7 @@
           </a>
 
           <!-- BARRA DE NAVEGACION -->
-          <form class="form-inline   col-lg-4 col-xs-12">
+          <form class="form-inline   col-lg-4 col-xs-12" method="post">
             <a title="Boton Home" href="index.php">
               <button class="boton btn btn-outline-success" style="margin:10px" id="boton" type="button"> Home </button>
             </a>

@@ -13,12 +13,12 @@ class CreateContactosTable extends Migration
      */
     public function up()
     {
-        Schema::create('contactos', function (Blueprint $table) {
+        Schema::create('contacts', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
-            $table->unsignedBigInteger('usuarios_id'); //conecta con la tabla usuarios
-            $table->foreign('usuarios_id')->references('id')->on('usuarios');
-            $table->integer('id_usuario2');// el usuario de contactos
+            $table->unsignedBigInteger('users_id'); //conecta con la tabla usuarios
+            $table->foreign('users_id')->references('id')->on('users');
+            $table->integer('id_users2');// el usuario de contactos
         });
     }
 
@@ -29,6 +29,6 @@ class CreateContactosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contactos');
+        Schema::dropIfExists('contacts');
     }
 }
