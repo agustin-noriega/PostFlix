@@ -29,6 +29,7 @@ margin-left: 10px;
   margin-bottom: 10px;
   padding-bottom: 10px;
   text-decoration: underline;
+
 }
 a{
     color: black;
@@ -43,4 +44,17 @@ a{
     color: red;
     background-color: black;
     border-color: red;
+}
+
+#posteos{
+  margin-left: 40%;
+}
+
+/* BARRA DEL COSTADO */
+.sidebar-sticky{
+  margin-top: 40%;
+  height:700px;
+}
+.nav-link{
+  color: white;
 }
