@@ -43,11 +43,84 @@
       </nav>
     </header>
     <main role="main">
-        <div class="container-marketing">
 
+{{-- CAMBIAR ESTA PARTE --}}
+
+        {{-- <div class="container-fluid" >
+
+            <div class="row" id="sidebar">
+
+              <nav class="col-md-2 d-none d-md-block bg-light sidebar bg-dark">
+                          <div class="sidebar-sticky bg-dark">
+                            <ul class="nav flex-column">
+                              <li class="nav-item">
+                                <a class="nav-link active" href="./index.php">
+                                   <span class="sr-only"></span>
+                                   Home
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./faqs">
+                                  Preguntas frecuentes
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./vistapost">
+                                  Peliculas recomendadas
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="./contacto">
+                                  Contactanos
+                                </a>
+                              </li>
+                            </ul>
+
+                            <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+                              <span>Your reviews</span>
+                              <a class="d-flex align-items-center text-muted" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="16"></line><line x1="8" y1="12" x2="16" y2="12"></line></svg>
+                              </a>
+                            </h6>
+                            <ul class="nav flex-column mb-2">
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                  Pelicula 1
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                  Pelicula 2
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                  Pelicula 3
+                                </a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                  Pelicula 4
+                                </a>
+                              </li>
+                            </ul>
+                          </div>
+                        </nav>
+            </div>
+
+
+
+
+
+
+
+        <div class="row" id="posteos">
         <h1 id="yourfilms">Tus Peliculas Favoritas</h1>
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="col-lg-4">
             <svg class="bd-placeholder-img rounded-circle" width="140" height="140" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 140x140"><img src="./Imagenes/movie2" width="140" height="140"><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
             <h2>Pelicula 1</h2>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
@@ -86,7 +159,7 @@
             <p><a class="btn btn-secondary" href="#" role="button">More about the movie »</a></p>
           </div>
         </div>
-  </div>
+  </div> --}}
 
 
 
