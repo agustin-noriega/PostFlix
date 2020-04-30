@@ -16,10 +16,9 @@ class CreatePosteosTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->date('date');
             $table->string('image',500);
             $table->string('description',500);
-            $table->decimal('rating',2,1);
+            $table->integer('rating');
 
             $table->unsignedBigInteger('users_id');
             $table->foreign('users_id')->references('id')->on('users');
