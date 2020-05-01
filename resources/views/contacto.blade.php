@@ -8,37 +8,31 @@
   </head>
   <body>
     <div class="container">
-      <header>
-
+      <header class="container">
         <nav class="navbar navbar-light bg-transparent">
-          <!-- IMAGEN DEL LOGO -->
-          <a title="Logo PostFlix" href="./index.php">
+          <!-- LOGO -->
+          <a title="PostFlix" href="./index.php">
             <img class="logo" src="logo.png" alt="Postflix">
           </a>
-
-          <!-- BARRA DE NAVEGACION -->
-          <form class="form-inline   col-lg-4 col-xs-12" method="post">
-            <a title="Boton Home" href="index.php">
-              <button class="boton btn btn-outline-success" style="margin:10px" id="boton" type="button"> Home </button>
-            </a>
-
-            <a title="Boton Login" href="./login">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
-            </a>
-            <a title="Boton Registro" href="./register">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
-            </a>
-            <a title="Boton Mis Posts" href="./vistapost">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> MisPosts </button>
-            </a>
-            <a title="Boton Ayuda" href="./faqs">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> FAQS </button>
-            </a>
-            <!-- <a title="Boton Contacto" href="./contacto.php">
-              <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Contacto </button>
-            </a> -->
-          </form>
         </nav>
+        <div class="form-inline  col-xs-2">
+          <a title="Boton Home" href="index.php">
+            <button class="btn btn-outline-success " style="margin:10px" id="boton" type="button"> Home </button>
+          </a>
+
+          <a title="Boton Login" href="./login">
+            <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Login </button>
+          </a>
+          <a title="Boton Registro" href="./register">
+            <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> Registro </button>
+          </a>
+          <a title="Boton Ayuda" href="./faqs">
+            <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> F.A.Q.S </button>
+          </a>
+          <!--<a title="Boton Mis Posts" href="./vistapost">
+            <button class="btn btn-outline-success" style="margin:10px" id="boton" type="button"> MisPosts </button>
+          </a>-->
+        </div>
       </header>
       <!-- COMIENZO DE CONTACTO POINTFLIX -->
 
@@ -51,7 +45,7 @@
         </div>
         <br>
 
-        <form class="form-signin rounded-pill">
+        <form id="form" class="form-signin rounded-pill">
           <p>Nombre*</p>
           <input type="text" id="inputNombre" class="form-control" placeholder="Ingrese su Nombre" required autofocus="">
 
@@ -62,7 +56,7 @@
           <input type="email" id="inputEmail" class="form-control" placeholder="Correo electronico" required autofocus="">
 
           <p>Dejanos tu comentario</p>
-          <textarea placeholder="Escribe aqui tu comentario para contactar contigo..." name="message" rows="8" cols="67"  ></textarea>
+          <textarea id="textarea" placeholder="Escribe aqui tu comentario para contactar contigo..." name="message" rows="8" cols="67"  ></textarea>
           <br>
           <button id="botoncoment" class="btn" type="submit" >Enviar Comentario</button>
           <br><br>
