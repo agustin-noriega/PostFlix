@@ -3,56 +3,59 @@
 /////////                ////*/
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
-/*////////               //////
-//////  FONDO DE PANTALLA //////
-/////////                ////*/
+
 body{
   background-image: url("../Imagenes/Netflix-Background.jpg");
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
-/*////////               //////
-//////  INICIO DEL HEADER! //////
+/*//////  HEADER //////
 /////////                ////*/
-
-nav .navbar{
-  justify-content: center;
+header{
+  overflow: hidden;
+  width: 100%;
+}
+header img{
+  float: left;
+}
+header button{
+  float: right;
+}
+header div button{
+  float: left;
 }
 
-.form-inline{
-  margin-left: 68%;
-}
+/* BARRA MENU */
 
-.form-inline{
-  flex-flow: row;
+#menu{
+  /* flex-flow: row; */
+  float: right;
+}
+/* SOLUCION para tener el menu y la barra de navegacion en linea */
+#logo{
+  float:left;
 }
 
 /*//////  BOTONES! //////*/
+/*////////               //////
+//////  BOTONES //////
+/////////                ////*/
 #boton{
   background-color: #EFF7F5;
 }
 
-button:hover{
-  color: #000;
-}
-
-.btn{
-  font-weight: 700;
-  font-family: 'Muli', sans-serif;
-
-}
-
-button#boton.btn.btn-outline-success {
+#boton.btn.btn-outline-success {
 color:#dc3545;
 border-color: #dc3545;
 padding-right: 6px 12px;
-margin: 10px;
+margin: 5px;
 }
-button#boton.btn.btn-outline-success:hover {
+
+#boton.btn.btn-outline-success:hover {
 color: white;
 border-color:#dc3545;
 padding-right: 6px 12px;
-margin: 10px;
+margin: 5px;
 background-color: #dc3545;
 }
 
