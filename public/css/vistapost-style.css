@@ -1,15 +1,27 @@
 body{
   width: 100%;
 }
+.form-control{
+  margin-left: 50px;
+  margin-right: 30px;
+}
+
+#postflixlogo{
+  margin-top: 24px;
+  margin-left: 20px;
+}
 .container-marketing{
 margin-top: 30px;
 margin-left: 10px;
 }
-#postflixlogo{
+/*#postflixlogo{
   margin-top: 24px;
-}
-#navbarCollapse{
+}*/
+/*#navbarCollapse{
   margin-left: 15px;
+}*/
+#posteos{
+  margin-top: 6%;
 }
 
 .btn-primary {

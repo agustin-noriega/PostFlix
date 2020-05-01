@@ -2,17 +2,23 @@ body{
   width: 100%;
   background-color: #303030;
 }
-
-h1{
+div.header{
+  display: flex;
+}
+img.logo{
+  margin-left: 12%;
+  margin-top: 12%;
+}
+h3{
 
   text-decoration: underline;
-  color:white;
+  color:black;
   font-size: 40px;
-  margin: 0px 0px 6px;
+  margin-left: 30%;
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
-div.all{
-  display: block;
-}
+/* font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji"; */
 
 p{
   color:white;
@@ -24,18 +30,28 @@ p{
 .btn.btn-danger.dropdown-toggle:after{
   content: " + ";
 }
-
-a{
-  color:white;
+/* Menu de botones a la izquierda */
+.form-inline{
+  margin-left: 35%;
 }
+div.menu{
+  margin-left: 30%;
+justify-content: center;
+  width: 25%;
+  display: inline-grid;
+}
+a{
+color: #bd2130;
+}
+
 div.dropdown-menu{
+
   background-color: grey;
   color:white;
 }
+.dropdown-menu{
 
-.form-inline{
-  flex-flow: row;
-  margin-left: 45%;
+  display: inline-grid;
 }
 
 button#boton.btn.btn-outline-success {
