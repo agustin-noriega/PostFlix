@@ -10,6 +10,36 @@ h1{
   font-size: 40px;
   margin: 0px 0px 6px;
 }
+/*//////  HEADER //////
+/////////                ////*/
+header{
+  overflow: hidden;
+  width: 100%;
+}
+header img{
+  float: left;
+}
+header button{
+  float: right;
+}
+header div button{
+  float: left;
+}
+
+/* BARRA MENU */
+
+.form-inline{
+  /* flex-flow: row; */
+  float: right;
+}
+/* SOLUCION para tener el menu y la barra de navegacion en linea */
+nav{
+  float:left;
+}
+
+
+/*//////               //////
+/////////                ////*/
 div.all{
   display: block;
 }
@@ -33,11 +63,107 @@ div.dropdown-menu{
   color:white;
 }
 
-.form-inline{
-  flex-flow: row;
-  margin-left: 45%;
+
+
+
+
+/*////////               //////
+//////  INICIO DEL ALTA //////
+/////////                ////*/
+#alta{
+  width: 90%;
+  margin-left: 20%;
 }
 
+#imagen-tit{
+  margin-left: 2%;
+}
+
+#botonarchivo{
+  background-color: #EFF7F5;
+  margin-left: 6%;
+}
+
+.h1titulo{
+
+  max-width:60%;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  margin-left: 22%;
+}
+h1{
+  font-family: 'Muli', sans-serif;
+  color: #000;
+  font-weight: bold;
+  color: red;
+  font-size: 60px;
+  text-shadow: 2px 2px 1px #000;
+}
+section p{
+  /* margin-left:8%; */
+  text-align: left;
+  color:white;
+  font-size: 2rem;
+  font-family: 'Muli', sans-serif;
+  font-weight: bold;
+  text-shadow: 3px 3px 2px #404040;
+}
+
+/* DESCRIPCION DEL POST */
+#descripcion-tit{
+  margin-left: 15%;
+}
+
+textarea{
+  font-family: 'Muli', sans-serif;
+  font-size: 20px;
+}
+/*  //////////////////////////////////////  */
+
+.form-control {
+    display: block;
+    width: 70%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+/*////////               //////
+//////  PUNTUACION //////
+/////////                ////*/
+#puntuacion-tit{
+  margin-left: 5%;
+}
+
+#box-puntuacion{
+  /* overflow: hidden; */
+}
+#box-puntuacion select{
+  /* float: left; */
+}
+#box-puntuacion p{
+  /* float: left; */
+  /* margin: 5px; */
+}
+
+/* BOTON SELECT PUNTUACION */
+#puntuacion{
+  width: 20%;
+  height: 20%;
+  margin-left: 12%;
+}
+
+/*////////               //////
+//////  BOTONES //////
+/////////                ////*/
 #boton{
   background-color: #EFF7F5;
 }
@@ -57,68 +183,6 @@ margin: 10px;
 background-color: #dc3545;
 }
 
-/*////////               //////
-//////  INICIO DEL CONTACTO //////
-/////////                ////*/
-
-#formulario{
-  width: 55%;
-  margin-left: 20%;
-}
-
-.h1titulo{
-
-  max-width:60%;
-  background-color: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  margin-left: 22%;
-}
-h1{
-  font-family: 'Muli', sans-serif;
-  color: #000;
-  font-weight: bold;
-  color: red;
-  font-size: 60px;
-  text-shadow: 2px 2px 1px #000;
-}
-section p{
-  margin-left:8%;
-  text-align: left;
-  color:white;
-  font-size: 2rem;
-  font-family: 'Muli', sans-serif;
-  font-weight: bold;
-  text-shadow: 3px 3px 2px #404040;
-}
-section input{
-  margin-left:8%;
-}
-textarea{
-  /* margin-left:8%; */
-  font-family: 'Muli', sans-serif;
-  font-size: 20px;
-}
-
-.form-control {
-    display: block;
-    width: 70%;
-    height: calc(1.5em + .75rem + 2px);
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #495057;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #ced4da;
-    border-radius: .25rem;
-    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-/*////////               //////
-//////  BOTONES //////
-/////////                ////*/
 #botoncoment{
-  margin-left:8%;
   background-color: #EFF7F5;
 }
