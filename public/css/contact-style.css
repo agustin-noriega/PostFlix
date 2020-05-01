@@ -16,42 +16,59 @@ body{
 /////////                ////*/
 
 
-nav .navbar{
-  justify-content: center;
+/*//////  HEADER //////
+/////////                ////*/
+header{
+  overflow: hidden;
+  width: 100%;
 }
+header img{
+  float: left;
+}
+header button{
+  float: right;
+}
+header div button{
+  float: left;
+}
+
+/* BARRA MENU */
 
 .form-inline{
-  margin-left: 68%;
+  /* flex-flow: row; */
+  float: right;
+}
+/* SOLUCION para tener el menu y la barra de navegacion en linea */
+nav{
+  float:left;
 }
 
-.form-inline{
-  flex-flow: row;
-}
 
-/*//////  BOTONES! //////*/
+
+/*////////               //////
+//////  BOTONES //////
+/////////                ////*/
 #boton{
   background-color: #EFF7F5;
 }
 
-button:hover{
-  color: #000;
+button#boton.btn.btn-outline-success {
+color:#dc3545;
+border-color: #dc3545;
+padding-right: 6px 12px;
+margin: 10px;
 }
 
-.btn{
-  font-weight: 700;
-  font-family: 'Muli', sans-serif;
-
+button#boton.btn.btn-outline-success:hover {
+color: white;
+border-color:#dc3545;
+padding-right: 6px 12px;
+margin: 10px;
+background-color: #dc3545;
 }
 
-.btn-outline-success:hover {
-    color: #fff;
-    background-color: #000;
-    border-color: #000;
-}
-
-.btn-outline-success {
-    color: #000;
-    border-color: #000;
+#botoncoment{
+  background-color: #EFF7F5;
 }
 /*////////               //////
 //////  INICIO DEL CONTACTO //////
@@ -84,17 +101,24 @@ section p{
 section input{
   margin-left:8%;
 }
-textarea{
+#form{
+  width: 90%;
+  /* margin-left: 20%; */
+}
+#textarea{
   margin-left:8%;
   font-family: 'Muli', sans-serif;
   font-size: 20px;
+  margin: none;
 }
 
 
-
+input{
+  width: 50%;
+}
 .form-control {
     display: block;
-    width: 70%;
+    width: 50%;
     height: calc(1.5em + .75rem + 2px);
     padding: .375rem .75rem;
     font-size: 1rem;
