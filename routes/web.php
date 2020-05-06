@@ -60,12 +60,11 @@ Route::post("/perfil/editar", "PerfilController@editarPelis");
 Route::get("/vistapost", function(){
   return view("vistapost");
 });
+route::get("/vistapost", "VistaPostController@listaPost");
 Route::post("/vistapost", "VistaPostController@interactuar");
 Route::post("/vistapost/calificacion", "VistaPostController@calificar");
 Route::post("/vistapost/comentar", "VistaPostController@comentar");
 
-Route::get("/altaPost", function(){
-  return view("altaPost");
-});
+Route::get("/altaPost", 'PostController@altaPost');
 
 Auth::routes();

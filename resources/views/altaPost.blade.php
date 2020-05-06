@@ -36,9 +36,14 @@
     </header>
     <br><br>
     <section class="container">
-      <section id="alta" class="form-signin rounded-pill col-8 col-md-8 col-lg-12">
-        <p id="imagen-tit" class="col-xs-8 col-md-8">Ingresa la Imagen de tu post</p>
+      <form id="alta" class="form-signin rounded-pill col-8 col-md-8 col-lg-12" method="post">
+        <p id="tituloPost">Titulo del Post*</p>
+        <input type="text" id="inputTitulo" class="form-control" placeholder="Ingrese el titulo del post" required autofocus="">
         <br>
+        <p id="tituloPelicula">Titulo de la Pelicula/Serie </p>
+        <input type="text" id="inputTitulo" class="form-control" placeholder="Ingrese el titulo de la pelicula/serie" required autofocus="">
+        <br>
+        <p id="imagen-tit" class="col-xs-8 col-md-8">Ingresa la Imagen de tu post</p>
         <input type="file" id="botonarchivo" name="myfile">
         <br><br>
         <p id="descripcion-tit">Descripción</p>
@@ -56,7 +61,7 @@
 
         <button id="botoncoment" class="btn" type="submit" >Publicar Post</button>
         <br><br>
-      </section>
+      </form>
     </section>
 
   </body>
