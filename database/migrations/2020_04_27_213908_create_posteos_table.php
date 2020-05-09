@@ -16,8 +16,8 @@ class CreatePosteosTable extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->bigIncrements('id');
 
-            $table->string('title-post');
-            $table->string('title-movie');
+            $table->string('title_post');
+            $table->string('title_movie');
             $table->string('image',500);
             $table->string('description',500);
             $table->integer('rating');

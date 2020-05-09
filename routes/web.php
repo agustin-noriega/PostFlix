@@ -65,6 +65,9 @@ Route::post("/vistapost", "VistaPostController@interactuar");
 Route::post("/vistapost/calificacion", "VistaPostController@calificar");
 Route::post("/vistapost/comentar", "VistaPostController@comentar");
 
-Route::get("/altaPost", 'PostController@altaPost');
+Route::get("/altaPost", function(){
+  return view("altaPost");
+});
+Route::post("altaPost", "PostController@alta");
 
 Auth::routes();

@@ -35,8 +35,11 @@
       </div>
     </header>
     <br><br>
+    <h1 id=titulo>Creando Nuevo Post!</h1>
+    <br><br>
     <section class="container">
-      <form id="alta" class="form-signin rounded-pill col-8 col-md-8 col-lg-12" method="post">
+      <form id="alta" class="form-signin rounded-pill col-8 col-md-8 col-lg-12" action="/altaPost" method="post" enctype="multipart/form-data">
+        {{csrf_field()}} <!--SIEMPRE DEBE ESTAR DENTRO DEL FORMULARIO-->
         <p id="tituloPost">Titulo del Post*</p>
         <input type="text" id="inputTitulo" class="form-control" placeholder="Ingrese el titulo del post" required autofocus="">
         <br>
@@ -44,7 +47,7 @@
         <input type="text" id="inputTitulo" class="form-control" placeholder="Ingrese el titulo de la pelicula/serie" required autofocus="">
         <br>
         <p id="imagen-tit" class="col-xs-8 col-md-8">Ingresa la Imagen de tu post</p>
-        <input type="file" id="botonarchivo" name="myfile">
+        <input type="file" id="botonarchivo" name="image">
         <br><br>
         <p id="descripcion-tit">Descripción</p>
         <textarea id="comentario" placeholder="Escribe aqui la descripción de tu post!..." name="message" rows="4" cols="67"  ></textarea>

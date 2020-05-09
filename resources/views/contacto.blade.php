@@ -35,8 +35,6 @@
         </div>
       </header>
       <!-- COMIENZO DE CONTACTO POINTFLIX -->
-
-
       <section class="contacto col-lg-12 col-md-12 col-xs-12">
         <div class="h1titulo rounded-pill">
           <br>
@@ -64,11 +62,6 @@
 
       </section>
     </div>
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
-
+    
   </body>
 </html>

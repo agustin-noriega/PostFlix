@@ -3,12 +3,13 @@ body{
   width: 100%;
 }
 
-h1{
+#titulo{
 
   text-decoration: underline;
   color:white;
   font-size: 40px;
   margin: 0px 0px 6px;
+  margin-left: 37%;
 }
 /*//////  HEADER //////
 /////////                ////*/
