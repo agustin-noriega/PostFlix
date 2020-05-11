@@ -27,31 +27,28 @@ p{
   margin: 1px 1px 1px;
   margin-bottom: 2px;
 }
-.btn.btn-danger.dropdown-toggle:after{
-  content: " + ";
-}
+
 /* Menu de botones a la izquierda */
 .form-inline{
   margin-left: 35%;
 }
 div.menu{
-  margin-left: 30%;
+  margin-left: 35%;
 justify-content: center;
   width: 25%;
   display: inline-grid;
 }
-a{
-color: #bd2130;
-}
+
 
 div.dropdown-menu{
 
   background-color: grey;
   color:white;
 }
-.dropdown-menu{
-
-  display: inline-grid;
+a {
+    color: black;
+    text-decoration: none;
+    background-color: transparent;
 }
 
 button#boton.btn.btn-outline-success {
